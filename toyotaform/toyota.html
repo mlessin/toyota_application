@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="toyota.css">
+    <title>Toyotaform</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <form action="#" onsubmit="validData()">
+            <div id="info">
+                <!-- <h1>Ordered Form</h1> -->
+                <div class="rikkle">
+                    <fieldset id="cust">
+                        <legend>customer information.</legend>
+                        <table id="table">
+
+                            <tr>
+
+                            </tr>
+                            <td>customerID:</td>
+                            <td>
+                                <input type="text" id="customer" placeholder="123-45-678">
+                             </tr> <tr>
+                            <td>name:</td>
+                            <td>
+                                <input type="text" style="width: 260px" id="name" placeholder="Tom Thumb">
+                            </td>
+                            </tr>
+
+                            <tr>
+                                <td>State:</td>
+
+                                <td>
+                                    <input type="text" style="width: 30px" placeholder="CA">
+                                    <input type="checkbox" id="customer" name="Retail Customer " value="retail">
+                                    <label for="retail">Retail Customer</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </div>
+
+
+
+                <div class="rikkle1">
+                    <fieldset id="">
+                        <legend>part Ordered</legend>
+                        <table id="table1">
+                            <tr>
+
+
+                                <td>part Number:</td>
+
+                                <td>
+                                    <input type="text" id="part" placeholder="10152">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Description:</td>
+                                <td>
+                                    <input type="text" id="des" placeholder="Oil Filter">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>price per part:</td>
+
+                                <td>
+                                    <input type="text" id="price" placeholder="$7.51">
+
+                                </td>
+                                <td>Quantity:</td>
+                                <td>
+                                    <input type="text" id="quantity" style="width: 20px" placeholder="2">
+                                </td>
+                                <!-- <input type="checkbox" id=""> -->
+                            </tr>
+
+
+                        </table>
+                    </fieldset>
+                </div>
+
+                <button id="pilo1" type="submit" name="compute" >Compute</button>
+                <button id="pilo2" type="button" name="New Order">New Order</button>
+
+            </div>
+
+
+            <div id="ship">
+                <div class="rikkle2">
+                    <fieldset id="Shipping">
+                        <legend>Shipping:</legend>
+                        <table id="table2">
+                            <tr>
+
+                                <td><input type="radio" name="shippingMethod" checked value="UPS"> UPS</td>
+                                <td> <input type="radio" name="shippingMethod" value="US Postal Air"> Us Postal Air
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td><input type="radio" name="shippingMethod" value="Fed Ex Ground"> Fed Ex Ground
+                                </td>
+                                <td><input type="radio" name="shippingMethod" value="Fed Ex Air"> Fed Ex Air</td>
+                            </tr>
+
+                        </table>
+                    </fieldset>
+                </div>
+
+                <div class="rikkle3">
+                    <fieldset id="">
+                        <legend>Output</legend>
+                        <table id="table3">
+                            <tr>
+
+                                <td>Cost:</td>
+                                <td>
+                                    <input type="text" placeholder="$15.02">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td> Sales Tax:</td>
+                                <td>
+                                    <input type="text" placeholder="1.50">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Shipping & Handling:</td>
+                                <td>
+                                    <input type="text" id="handling" placeholder="14.00">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Total:</td>
+                                <td>
+                                    <input type="text" placeholder="$30.52">
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </div>
+                <button id="pilo3" type="button" name="Exit" style="width: 100px">Exit</button>
+
+            </div>
+
+
+        </form>
+
+        <script src="toyota.js"></script>
+</body>
+
+</html>
